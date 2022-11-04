@@ -8,8 +8,8 @@ spec:
   template:
     spec:
       containers:
-      - name: sleep
-        image: alpine:latest
-        command: ["env | grep ARGOCD"]
+      - name: command-demo-container
+        image: debian
+        command: ["printenv"]
       restartPolicy: Never
   backoffLimit: 0
