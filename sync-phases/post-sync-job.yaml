@@ -11,6 +11,6 @@ spec:
       containers:
       - name: sleep
         image: alpine:latest
-        command: ["env", "|", "grep", "ARGOCD"]
+        command: ["env | grep ARGOCD"]
       restartPolicy: Never
   backoffLimit: 0
